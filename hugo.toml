@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'ko-kr'
 title = "kimwoo-ya's blog"
-theme = 'hugo-bearblog'
+theme = 'risotto' #'hugo-bearblog'
 
 sectionPagesMenu = "main"
