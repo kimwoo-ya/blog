@@ -52,6 +52,12 @@ $ touch .gitmodules; git submodule add https://github.com/joeroe/risotto themes/
 
 # change defined theme options...
 $ vim hugo.toml
+
+# add comment feature
+$ mkdir -p layouts/partials
+$ vim utterances.html
+$ mkdir -p layouts/_default
+$ touch layouts/_default/single.html
 ```
 
 
