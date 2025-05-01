@@ -39,3 +39,5 @@ $ hugo server -D
 # modify post.md(draft) : true -> false
 $ hugo server
 ```
+
+[kimwoo-ya.github.io/blog/](https://kimwoo-ya.github.io/blog)
