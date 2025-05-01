@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'ko-kr'
+title = "wooya's blog"
+theme = 'hugo-bearblog'
+
+sectionPagesMenu = "main"
