@@ -6,8 +6,22 @@
     <description>Recent content on kimwoo-ya&#39;s blog</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 01 May 2025 14:05:19 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 May 2025 02:46:46 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[leetcode] 179. Largest Number - Java</title>
+      <link>http://localhost:1313/code-test/leetcode/179.largestnumber/</link>
+      <pubDate>Fri, 02 May 2025 02:46:46 +0900</pubDate>
+      <guid>http://localhost:1313/code-test/leetcode/179.largestnumber/</guid>
+      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Given a list of non-negative integers &lt;code&gt;nums&lt;/code&gt;, arrange them such that they form the largest number and return it.&#xA;Since the result may be very large, so you need to return a string instead of an integer.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;1 &amp;lt;= nums.length &amp;lt;= 100, 0 &amp;lt;= nums[i] &amp;lt;= 10^9&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;음수가 아닌 정수 nums의 목록이 주어지면, 가장 큰 수가 되도록 배열하여 반환하세요. 결과가 매우 클 수 있으므로 정수 대신 문자열을 반환해야 합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>[leetcode] 15. 3Sum - Java</title>
+      <link>http://localhost:1313/code-test/leetcode/15.3sum/</link>
+      <pubDate>Fri, 02 May 2025 02:16:38 +0900</pubDate>
+      <guid>http://localhost:1313/code-test/leetcode/15.3sum/</guid>
+      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Notice that the solution set must not contain duplicate triplets.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;3 &amp;lt;= nums.length &amp;lt;= 3000, -10^5 &amp;lt;= nums[i] &amp;lt;= 10^5&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;정수 배열 nums가 주어졌을 때, i != j, i != k, j != k, nums[i] + nums[j] + nums[k] == 0을 만족하는 모든 세쌍 [nums[i], nums[j], nums[k]]를 반환합니다. &lt;!-- raw HTML omitted --&gt;해답 집합에는 중복된 세쌍이 포함되어서는 안 됩니다.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[softeer] 장애물 인식 프로그램(Lv.2) - Java</title>
       <link>http://localhost:1313/code-test/softeer/%EC%9E%A5%EC%95%A0%EB%AC%BC-%EC%9D%B8%EC%8B%9D-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8lv.2/</link>
