@@ -39,5 +39,21 @@ $ hugo server -D
 # modify post.md(draft) : true -> false
 $ hugo server
 ```
+## Changing Theme..
+```bash
+$ rm -rf themes/hugo-bearblog
 
+
+$ git submodule deinit themes/hugo-bearblog
+$ git rm themes/hugo-bearblog
+$ rm .gitmodules
+
+$ touch .gitmodules; git submodule add https://github.com/joeroe/risotto themes/risotto
+
+# change defined theme options...
+$ vim hugo.toml
+```
+
+
+## Destinations..
 [kimwoo-ya.github.io/blog/](https://kimwoo-ya.github.io/blog)
