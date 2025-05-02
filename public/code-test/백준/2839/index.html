@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><title>[백준] 2839번 설탕 배달(실버4) - Java &ndash; kimwoo-ya&#39;s blog</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8"/>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="http://localhost:1313/css/palettes/base16-dark.css">
+<link rel="stylesheet" href="http://localhost:1313/css/risotto.css">
+<link rel="stylesheet" href="http://localhost:1313/css/custom.css">
+
+
+
+
+
+
+
+
+
+
+</head>
+
+    <body>
+        <div class="page">
+
+            <header class="page__header"><nav class="page__nav main-nav">
+    <ul>
+      <li class="nomarker"><h1 class="page__logo"><a href="http://localhost:1313/" class="page__logo-inner">kimwoo-ya&#39;s blog</a></h1></li>
+    
+    
+    <li class="main-nav__item"><a class="nav-main-item active" href="http://localhost:1313/code-test/" title="Code-Tests">Code-Tests</a></li>
+    
+    <li class="main-nav__item"><a class="nav-main-item" href="http://localhost:1313/posts/" title="Posts">Posts</a></li>
+    
+    </ul>
+</nav>
+
+</header>
+
+            <section class="page__body">
+<article>
+  <header>
+    <h1>[백준] 2839번 설탕 배달(실버4) - Java</h1>
+    <p class="byline">2025-05-02</p>
+  </header>
+
+  <h2 id="문제-설명">문제 설명</h2>
+<blockquote>
+<p>상근이는 요즘 설탕공장에서 설탕을 배달하고 있다. 상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다. 설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.</p></blockquote>
+<blockquote>
+<p>상근이는 귀찮기 때문에, 최대한 적은 봉지를 들고 가려고 한다. 예를 들어, 18킬로그램 설탕을 배달해야 할 때, 3킬로그램 봉지 6개를 가져가도 되지만, 5킬로그램 3개와 3킬로그램 1개를 배달하면, 더 적은 개수의 봉지를 배달할 수 있다.</p></blockquote>
+<blockquote>
+<p>상근이가 설탕을 정확하게 N킬로그램 배달해야 할 때, 봉지 몇 개를 가져가면 되는지 그 수를 구하는 프로그램을 작성하시오.</p></blockquote>
+<h2 id="문제-풀이">문제 풀이</h2>
+<ul>
+<li>제시되는 설탕 봉지의 무게에 따라 최소 봉지수를 구하라</li>
+<li>그에 해당하는 적절한 풀이 방법은 아래 방안으로 연상된다..
+<ol>
+<li>그리디</li>
+<li>bfs</li>
+</ol>
+</li>
+</ul>
+<p>해서, 두 방법으로 한번 뚝딱 조져보자.</p>
+<h2 id="성공한-풀이---1-bfs">성공한 풀이 - 1 (BFS)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.io.BufferedReader;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.io.InputStreamReader;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.*;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) <span style="color:#66d9ef">throws</span> Exception {
+</span></span><span style="display:flex;"><span>        BufferedReader br <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedReader(<span style="color:#66d9ef">new</span> InputStreamReader(System.<span style="color:#a6e22e">in</span>));
+</span></span><span style="display:flex;"><span>        Integer input <span style="color:#f92672">=</span> Integer.<span style="color:#a6e22e">parseInt</span>(br.<span style="color:#a6e22e">readLine</span>());
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">boolean</span><span style="color:#f92672">[]</span> visited <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">boolean</span><span style="color:#f92672">[</span>input <span style="color:#f92672">+</span> 1<span style="color:#f92672">]</span>; <span style="color:#75715e">// 방문 확인</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Queue<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]&gt;</span> queue <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayDeque();
+</span></span><span style="display:flex;"><span>        queue.<span style="color:#a6e22e">offer</span>(<span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span>{input, 0}); <span style="color:#75715e">// 초깃값 설정.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        Integer minCount <span style="color:#f92672">=</span> Integer.<span style="color:#a6e22e">MAX_VALUE</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> (<span style="color:#f92672">!</span>queue.<span style="color:#a6e22e">isEmpty</span>()) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> elem <span style="color:#f92672">=</span> queue.<span style="color:#a6e22e">poll</span>();
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> total <span style="color:#f92672">=</span> elem<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> elem<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 음수가 되거나 기존 연산 결과와 동일한건 추가적으로 하지말자.</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (total <span style="color:#f92672">&lt;</span> 0 <span style="color:#f92672">||</span> visited<span style="color:#f92672">[</span>total<span style="color:#f92672">]</span>) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (total <span style="color:#f92672">==</span> 0) {
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e">// 최소 가짓수를 업데이트하자.</span>
+</span></span><span style="display:flex;"><span>                minCount <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">min</span>(minCount, count);
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">continue</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            visited<span style="color:#f92672">[</span>total<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// divide로도 처리할수 있을것 같지만....</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 요게 좀더 직관적이니..ㅎ</span>
+</span></span><span style="display:flex;"><span>            queue.<span style="color:#a6e22e">offer</span>(<span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span>{total <span style="color:#f92672">-</span> 5, count <span style="color:#f92672">+</span> 1});
+</span></span><span style="display:flex;"><span>            queue.<span style="color:#a6e22e">offer</span>(<span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span>{total <span style="color:#f92672">-</span> 3, count <span style="color:#f92672">+</span> 1});
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// 아래 경우는 뭘해도 나눠떨어지지 않은것이니 실패임</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (minCount.<span style="color:#a6e22e">equals</span>(Integer.<span style="color:#a6e22e">MAX_VALUE</span>)){
+</span></span><span style="display:flex;"><span>            System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#f92672">-</span>1);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(minCount);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="성공한-풀이---2-그리디">성공한 풀이 - 2 (그리디)</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> java.io.BufferedReader;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.io.InputStreamReader;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> java.util.*;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Main</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) <span style="color:#66d9ef">throws</span> Exception {
+</span></span><span style="display:flex;"><span>        BufferedReader br <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> BufferedReader(<span style="color:#66d9ef">new</span> InputStreamReader(System.<span style="color:#a6e22e">in</span>));
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> n <span style="color:#f92672">=</span> Integer.<span style="color:#a6e22e">parseInt</span>(br.<span style="color:#a6e22e">readLine</span>());
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> count <span style="color:#f92672">=</span> 0;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> (n <span style="color:#f92672">&gt;=</span> 0) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (n <span style="color:#f92672">%</span> 5 <span style="color:#f92672">==</span> 0) {
+</span></span><span style="display:flex;"><span>                count <span style="color:#f92672">+=</span> n <span style="color:#f92672">/</span> 5;
+</span></span><span style="display:flex;"><span>                System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(count);
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>            n <span style="color:#f92672">-=</span> 3;
+</span></span><span style="display:flex;"><span>            count<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>        System.<span style="color:#a6e22e">out</span>.<span style="color:#a6e22e">println</span>(<span style="color:#f92672">-</span>1);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="수행-결과">수행 결과</h3>
+<table>
+  <thead>
+      <tr>
+          <th>구분</th>
+          <th>메모리</th>
+          <th>시간</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>BFS</td>
+          <td>14552kb</td>
+          <td>108ms</td>
+      </tr>
+      <tr>
+          <td>그리디</td>
+          <td>14216kb</td>
+          <td>108ms</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="결론">결론.</h3>
+<p>코드와 수행 결과를 살펴보면 그리디를 쓰는게 나을듯하다.</p>
+<p>내가 코딩테스트를 연습하는건 <del>(다른 회사로 이직)</del> 더나은 제품 개발이 목적이기 때문에, 문제를 보고 어떤 알고리즘을 쓰는지 판단하고, 그걸 적재적소에 갖다 넣을수 있는 그런 눈을 더 길러야할것 같다..ㅎ</p>
+
+
+  <script src="https://utteranc.es/client.js"
+        repo="kimwoo-ya/blog"
+        issue-term="pathname"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+  
+</article>
+
+            </section>
+
+            <section class="page__aside">
+                <div class="aside__about">
+
+<ul class="aside__social-links">
+    
+</ul>
+</div>
+                <hr>
+                <div class="aside__content">
+                </div>
+            </section>
+
+            <footer class="page__footer"><p>
+    
+    
+
+    
+    
+    
+      
+    
+      
+    
+
+    
+      
+      
+          
+            
+            
+                <br/><span class="active">$ echo $LANG<br/><b></b></span><br/>
+
+            
+          
+      
+    
+</p>
+<br /><br />
+<p class="copyright"></p>
+<p class="advertisement">Powered by <a href="https://gohugo.io/">hugo</a> and <a href="https://github.com/joeroe/risotto">risotto</a>.</p>
+</footer>
+
+        </div>
+    </body>
+
+</html>

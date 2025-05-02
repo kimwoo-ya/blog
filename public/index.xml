@@ -6,21 +6,28 @@
     <description>Recent content on kimwoo-ya&#39;s blog</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 02 May 2025 02:46:46 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 May 2025 16:21:03 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[백준] 2839번 설탕 배달(실버4) - Java</title>
+      <link>http://localhost:1313/code-test/%EB%B0%B1%EC%A4%80/2839/</link>
+      <pubDate>Fri, 02 May 2025 16:21:03 +0900</pubDate>
+      <guid>http://localhost:1313/code-test/%EB%B0%B1%EC%A4%80/2839/</guid>
+      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;상근이는 요즘 설탕공장에서 설탕을 배달하고 있다. 상근이는 지금 사탕가게에 설탕을 정확하게 N킬로그램을 배달해야 한다. 설탕공장에서 만드는 설탕은 봉지에 담겨져 있다. 봉지는 3킬로그램 봉지와 5킬로그램 봉지가 있다.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;상근이는 귀찮기 때문에, 최대한 적은 봉지를 들고 가려고 한다. 예를 들어, 18킬로그램 설탕을 배달해야 할 때, 3킬로그램 봉지 6개를 가져가도 되지만, 5킬로그램 3개와 3킬로그램 1개를 배달하면, 더 적은 개수의 봉지를 배달할 수 있다.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;상근이가 설탕을 정확하게 N킬로그램 배달해야 할 때, 봉지 몇 개를 가져가면 되는지 그 수를 구하는 프로그램을 작성하시오.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[leetcode] 179. Largest Number - Java</title>
       <link>http://localhost:1313/code-test/leetcode/179.largestnumber/</link>
       <pubDate>Fri, 02 May 2025 02:46:46 +0900</pubDate>
       <guid>http://localhost:1313/code-test/leetcode/179.largestnumber/</guid>
-      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Given a list of non-negative integers &lt;code&gt;nums&lt;/code&gt;, arrange them such that they form the largest number and return it.&#xA;Since the result may be very large, so you need to return a string instead of an integer.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;1 &amp;lt;= nums.length &amp;lt;= 100, 0 &amp;lt;= nums[i] &amp;lt;= 10^9&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;음수가 아닌 정수 nums의 목록이 주어지면, 가장 큰 수가 되도록 배열하여 반환하세요. 결과가 매우 클 수 있으므로 정수 대신 문자열을 반환해야 합니다.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Given a list of non-negative integers &lt;code&gt;nums&lt;/code&gt;, arrange them such that they form the largest number and return it.&#xA;Since the result may be very large, so you need to return a string instead of an integer.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;1 &amp;lt;= &lt;code&gt;nums.length&lt;/code&gt; &amp;lt;= 100, 0 &amp;lt;= &lt;code&gt;nums[i]&lt;/code&gt; &amp;lt;= 10^9&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;음수가 아닌 정수 &lt;code&gt;nums&lt;/code&gt;의 목록이 주어지면, 가장 큰 수가 되도록 배열하여 반환하세요. 결과가 매우 클 수 있으므로 정수 대신 문자열을 반환해야 합니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[leetcode] 15. 3Sum - Java</title>
       <link>http://localhost:1313/code-test/leetcode/15.3sum/</link>
       <pubDate>Fri, 02 May 2025 02:16:38 +0900</pubDate>
       <guid>http://localhost:1313/code-test/leetcode/15.3sum/</guid>
-      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Notice that the solution set must not contain duplicate triplets.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;3 &amp;lt;= nums.length &amp;lt;= 3000, -10^5 &amp;lt;= nums[i] &amp;lt;= 10^5&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;정수 배열 nums가 주어졌을 때, i != j, i != k, j != k, nums[i] + nums[j] + nums[k] == 0을 만족하는 모든 세쌍 [nums[i], nums[j], nums[k]]를 반환합니다. &lt;!-- raw HTML omitted --&gt;해답 집합에는 중복된 세쌍이 포함되어서는 안 됩니다.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Notice that the solution set must not contain duplicate triplets.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Constraints&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;3 &amp;lt;= &lt;code&gt;nums.length&lt;/code&gt; &amp;lt;= 3000, -10^5 &amp;lt;= &lt;code&gt;nums[i]&lt;/code&gt; &amp;lt;= 10^5&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;정수 배열 nums가 주어졌을 때, i != j, i != k, j != k, nums[i] + nums[j] + nums[k] == 0을 만족하는 모든 세쌍 [nums[i], nums[j], nums[k]]를 반환합니다. &lt;!-- raw HTML omitted --&gt;해답 집합에는 중복된 세쌍이 포함되어서는 안 됩니다.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[softeer] 장애물 인식 프로그램(Lv.2) - Java</title>
