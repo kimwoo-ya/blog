@@ -6,8 +6,15 @@
     <description>Recent content in Code-Tests on kimwoo-ya&#39;s blog</description>
     <generator>Hugo</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 02 May 2025 16:21:03 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 May 2025 00:20:27 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/code-test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[백준] 28702번 FizzBuzz(브론즈1) - Java</title>
+      <link>http://localhost:1313/code-test/%EB%B0%B1%EC%A4%80/28702/</link>
+      <pubDate>Sun, 04 May 2025 00:20:27 +0900</pubDate>
+      <guid>http://localhost:1313/code-test/%EB%B0%B1%EC%A4%80/28702/</guid>
+      <description>&lt;h2 id=&#34;문제-설명&#34;&gt;문제 설명&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;FizzBuzz 문제는&#xA;$i = 1, 2, \cdots$ 에 대해 다음 규칙에 따라 문자열을 한 줄에 하나씩 출력하는 문제입니다.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$i$가&#xA;$3$의 배수이면서&#xA;$5$의 배수이면 “FizzBuzz”를 출력합니다.&#xA; &lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$i$가&#xA;$3$의 배수이지만&#xA;$5$의 배수가 아니면 “Fizz”를 출력합니다.&#xA; &lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$i$가&#xA;$3$의 배수가 아니지만&#xA;$5$의 배수이면 “Buzz”를 출력합니다.&#xA; &lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;$i$가&#xA;$3$의 배수도 아니고&#xA;$5$의 배수도 아닌 경우&#xA;$i$를 그대로 출력합니다.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;FizzBuzz 문제에서 연속으로 출력된 세 개의 문자열이 주어집니다. 이때, 이 세 문자열 다음에 올 문자열은 무엇일까요?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[백준] 2839번 설탕 배달(실버4) - Java</title>
       <link>http://localhost:1313/code-test/%EB%B0%B1%EC%A4%80/2839/</link>
